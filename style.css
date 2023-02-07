@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Lobster", cursive; */
+  font-family: "Teko", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  justify-content: space-around;
+  align-items: center;
+}
+.container h1 {
+  font-family: "Cinzel", serif;
+  color: #14213d;
+  cursor: pointer;
+}
+.container h1 span {
+  font-family: "Cinzel", serif;
+  color: #efc801;
+  transition: 0.4s ease-in-out;
+}
+.container h1:hover span {
+  color: #14213d;
+}
+.calculator {
+  background: #14213d;
+  padding: 20px;
+  border-top-left-radius: 60px !important;
+  border-radius: 10px;
+}
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: #ffd60a;
+  cursor: pointer;
+  margin: 10px;
+}
+input[type="button"] {
+  transition: 0.4s ease-in-out;
+}
+input[type="button"]:hover {
+  transform: scale(1.1);
+}
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+.display input {
+  text-align: right;
+  flex: 1;
+  font-size: 40px !important;
+  box-shadow: none !important;
+  color: white !important;
+  font-family: "Lobster", cursive !important;
+  /* cursor: default !important; */
+}
+.equal {
+  width: 145px !important;
+  background-color: #ffd60a !important;
+  color: #14213d !important;
+  font-size: 35px !important;
+}
